@@ -1,19 +1,15 @@
-$fontColor: #0091aa;
-$colorHeading: #be4a14;
-#content  // div with id: content
-{
-    color: $fontColor;
-}
+$fontColor: #fff;
 
-h2
-{
-    color: $colorHeading;
-}
-
-h1{
-    @extend h2;
+.color{
+    padding-top: 10px;
+    color: #fff;
 }
 
 .leftfloater {
     display: block;
+}
+
+header {
+    height: 80px;
+    background-color: #000;
 }
