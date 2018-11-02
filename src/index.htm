@@ -9,7 +9,15 @@
 <body>  
 
   <header class="container fluid col-lg-12">
-    <h1 class="color">Kunder</h1>
+    <div class="col-lg-6">
+        <h1 class="color">Kunder</h1>
+    </div>
+    <div class="col-lg-6 btnfront">
+        <input id="getOneCust" placeholder="Skriv id"/>
+        <button id="getOneCustomer" class="btn btn-primary">Find en kunde</button>
+    <button id="getAllCustomers" class="btn btn-primary">Hent alle kunder</button>
+    <button id="showAddCustomerBox" class="btn btn-primary">Tilføj kunde</button>
+    </div>
   </header>
   <table class="table">
     <thead>
@@ -25,34 +33,24 @@
       </tbody>
     </thead>
   </table>
-      <h1>Alle kunder</h1>
-      <div id="content"></div>
-      <button id="getAllCustomers">Hent alle kunder</button>
-    
-      <h1>Hent en kunde</h1>
-      <div id="contentOne"></div>
-      <input id="getOneCust" placeholder="Skriv id"/>
-      <button id="getOneCustomer">Find en kunde</button>
-
-      <h1>Tilføj en ny kunde</h1>
-    
-      <!----<input id="addId" placeholder="Skriv dit id" class="leftfloater"/>-->
+  <div id="addCustomerBox" >
+      <h3>Tilføj en ny kunde</h3>
       <input id="addFirstName" placeholder="Skriv dit fornavn" class="leftfloater"/>
       <input id="addLastName" placeholder="Skriv dit efternavn" class="leftfloater"/>
       <input id="addYear" placeholder="Skriv dit fødselsår" class="leftfloater" type="number"/>
-      
-      <button id="addButton">Tilføj Kunde</button>
+      <button id="addButton" class="btn btn-outline-primary">Tilføj Kunde</button>
+      <p id="errormessage"></p>
+    </div>
 
-      <h1>Slet en kunde</h1>
-      <input id="custIdDelete" placeholder="Skriv dit id" class="leftfloater"/>
-      <button id="deleteButton">Slet kunde</button>
-    
-      <h1>Opdater en kunde</h1>
+  <div id="addCustomerBoxUp">
+      <h3>Opdater en kunde</h3>
       <input id="updateId" placeholder="Skriv id" class="leftfloater"/>
       <input id="updateFirstName" placeholder="Skriv fornavn" class="leftfloater"/>
       <input id="updateLastName" placeholder="Skriv efternavn" class="leftfloater"/>
       <input id="updateYear" placeholder="Skriv år" class="leftfloater"/>
-      <button id="updateButton">Opdater kunde</button>
+      <button id="updateButton" class="btn btn-outline-primary">Opdater kunde</button>
+      <p id="errormessageup"></p>
+    </div>
 
   <script src="bundle.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>

@@ -1,4 +1,5 @@
 $fontColor: #fff;
+$errorColor: red;
 
 .color{
     padding-top: 10px;
@@ -12,4 +13,22 @@ $fontColor: #fff;
 header {
     height: 80px;
     background-color: #000;
+}
+
+.leftmargin {
+    margin-left: 30px;
+}
+
+#errormessage {
+    color: $errorColor;
+}
+
+#errormessageup {
+    color: $errorColor;
+}
+
+.btnfront {
+    float: left;
+    margin-left: 1100px;
+    margin-top: -45px;
 }
